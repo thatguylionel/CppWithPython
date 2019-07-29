@@ -9,7 +9,7 @@ To be honest, not a lot of changes were made, however a few key configurations h
 - Python Installation: python-3.7.4 with debug install files included (this option is available when installing Python)
 - C++ 11
 - Visual Studio 2015
-** __cdecl (/Gd) is set as the calling convention, but will change this to __stdcall (/Gz) 
+- ** __cdecl (/Gd) is set as the calling convention, but will change this to __stdcall (/Gz) 
 
 
 # Configs
