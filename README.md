@@ -5,14 +5,15 @@ The idea was to take existing examples, such as this wonderful post by Jonathan 
 
 To be honest, not a lot of changes were made, however a few key configurations had to be made to accommodate the Version 3 format of python, as well as copying a couple of DLL files for Visual Studio purposes:
 
-#My Personal Setup for this project
+# My Personal Setup for this project
 Python Installation: python-3.7.4 with debug install files included (this option is available when installing Python)
 C++ 11
 
 
-#Configs
-- I compiled this project as a x86 build
-- Within Visual Studios Properties Setup, I pointed the Include Directory and Linker "Link Library Dependencies" to my installed path for python, which you need to configure should you have installed this to a different directory: 
+# Configs
+I compiled this project as a x86 build
+
+Within Visual Studios Properties Setup, I pointed the Include Directory and Linker "Link Library Dependencies" to my installed path for python, which you need to configure should you have installed this to a different directory: 
 
 C/C++-->General-->Additional Include Libraries (Select All Configurations)
 $(MSBuildProgramFiles32)\Python37-32\include\internal;$(MSBuildProgramFiles32)\Python37-32\include;%(AdditionalIncludeDirectories)
