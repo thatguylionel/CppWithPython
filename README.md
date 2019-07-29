@@ -20,18 +20,18 @@ C/C++-->General-->Additional Include Libraries (Select All Configurations)
 $(MSBuildProgramFiles32)\Python37-32\include\internal;$(MSBuildProgramFiles32)\Python37-32\include;%(AdditionalIncludeDirectories)
 
 Linker-->General-->Link Library Dependencies (Select All Configurations)
-$(MSBuildProgramFiles32)\Python37-32\libs;%(AdditionalLibraryDirectories)
+ $(MSBuildProgramFiles32)\Python37-32\libs;%(AdditionalLibraryDirectories)
 
 Linker-->Input-->Additional Dependenceis (Select Debug)
-python37_d.lib;%(AdditionalDependencies)
+ python37_d.lib;%(AdditionalDependencies)
 
 Linker-->Input-->Additional Dependenceis (Select Release)
-python37.lib;%(AdditionalDependencies)
+ python37.lib;%(AdditionalDependencies)
 
 Build Events --> Post-Build Event (Select Debug)
-xcopy /y /d "$(ProjectDir)Sample.py" "$(OutDir)"
-xcopy /y /d "$(MSBuildProgramFiles32)\Python37-32\python37_d.dll" "$(OutDir)"
+ xcopy /y /d "$(ProjectDir)Sample.py" "$(OutDir)"
+ xcopy /y /d "$(MSBuildProgramFiles32)\Python37-32\python37_d.dll" "$(OutDir)"
 
 Build Events --> Post-Build Event (Select Release)
-xcopy /y /d "$(ProjectDir)Sample.py" "$(OutDir)"
-xcopy /y /d "$(MSBuildProgramFiles32)\Python37-32\python37.dll" "$(OutDir)"
+ xcopy /y /d "$(ProjectDir)Sample.py" "$(OutDir)"
+ xcopy /y /d "$(MSBuildProgramFiles32)\Python37-32\python37.dll" "$(OutDir)"
