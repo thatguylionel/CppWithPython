@@ -8,6 +8,7 @@ To be honest, not a lot of changes were made, however a few key configurations h
 # My Personal Setup for this project
 Python Installation: python-3.7.4 with debug install files included (this option is available when installing Python)
 C++ 11
+Visual Studio 2015
 
 
 # Configs
